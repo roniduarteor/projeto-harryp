@@ -1,0 +1,265 @@
+:root{
+    --azul-escuro: #0E1A42;
+    --azul-claro: #222F5B;
+}
+
+@font-face {
+    font-family: 'Harry P';
+    src: url('../fonts/HARRYP__.TTF') format('truetype');
+}
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: #0E1A42;
+    background-image: url('../img/LoginBackground.png');
+}
+
+
+/* -------------------- HEADER E NAV BAR -------------------------- */
+.header{
+    width: 100vw;
+    height: 96px;
+    
+    background-color: #222F5B;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.navbar{
+    height: 76px;
+    width: 93.05555556vw;
+
+    display: flex;
+    flex-direction: row;
+    justify-content:center;
+    align-items: center;
+
+    gap: 217px;
+}
+
+.logoImgName{
+    display: flex;
+    gap: 14.39px;
+}
+
+.logoImgName .logoName{
+    height: 51;
+    color: #FFF;
+    font-family: "Harry P";
+    font-size: 54px;
+    font-style: normal;
+    font-weight: 400;
+
+    text-decoration: none;
+    margin-top: 12px;
+}
+
+.decorationBar{
+    width: 424px;
+    height: 11px;
+
+    border-radius: 15px;
+    background: #946B2D;
+    box-shadow: 1px 4px 4px 0px rgba(0, 0, 0, 0.25), 0px 4px 4px 0px rgba(0, 0, 0, 0.25) inset;
+}
+
+.infos{
+    width: 255px;
+    height: 49px;
+
+    display: flex;
+    gap: 20px;
+}
+
+.infos .login{
+    width: 105px;
+    height: 49px;
+
+    border-radius: 15px;
+    background: #946B2D;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.infos .login .loginName{
+    color: #FFF;
+    font-family: "Harry P";
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 400;
+    text-decoration: none;
+}
+
+
+
+.infos .aboutUs{
+    width: 105px;
+    height: 49px;
+
+    border-radius: 15px;
+    border: 1px solid #946B2D;
+    background: #222F5B;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.infos .aboutUs:hover{
+    background: #946B2D;
+    cursor: pointer;
+}
+.infos .aboutUs .aboutUsName{
+    color: #FFF;
+    font-family: "Harry P";
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 400;
+    text-decoration: none;
+}
+
+
+
+
+
+
+/* -------------------- MAIN TITLE -------------------------- */
+
+
+.hero{
+    width: 100vw;
+    height: 571px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    background-image: url('../img/Wizch\ 1\ \(1\).png');
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.hero h1{
+    width: 580px;
+    height: 140px;
+
+    color: #FFF;
+    font-family: "Harry P";
+    font-size: 140px;
+    font-style: normal;
+    font-weight: 400;
+
+    margin-bottom: -30px;
+}
+.hero h2{
+    text-align: center;
+
+    width: 580px;
+    height: 140px;
+
+    color: #FFF;
+    font-family: "Harry P";
+    font-size: 140px;
+    font-style: normal;
+    font-weight: 400;
+}
+
+
+
+
+
+
+
+/* -------------------- MAIN CHARACTERS TITLE -------------------------- */
+
+
+.characterTitleList{
+    width: 489px;
+    height: 62px;
+    
+    background-color: #FFF;
+    border-radius: 15px;
+
+    filter: drop-shadow(4px 4px 4px rgba(0, 0, 0, 0.25));
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    margin-left: 79px;
+    margin-top: 64px;
+
+    margin-bottom: -28px;
+}
+
+.titleListText{
+    color: #0E1A42;
+    font-family: "Roboto Mono", monospace; 
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 700;
+}
+
+
+
+
+
+
+
+
+
+/* -------------------- MAIN CHARACTERS -------------------------- */
+
+
+.character-container{
+    width: 100vw;
+    height: 653px;
+
+
+    background-color: #222F5B;
+    box-shadow: 6px 4px 17.1px 0px rgba(0, 0, 0, 0.50), 0px 0px 40px -13px rgba(0, 0, 0, 0.25) inset, -6px -4px 17.1px 0px rgba(0, 0, 0, 0.15), 0px 4px 138px 64px rgba(0, 0, 0, 0.25) inset;
+}
+
+
+
+
+
+
+
+
+/* -------------------- MAIN HOGWARTS HOUSE -------------------------- */
+
+
+.casa1{
+    
+}
+
+
+
+/* 
+
+<section class="character-container" id="character-container">
+
+            <div class="filter">
+                <p class="filterBy">Filter by:</p>
+
+                <ul>
+                    <li><button class="casa1"><img src="./img/LogoCasa.png" alt="">Griffyndor</button></li>
+                    <li><button class="casa2"><img src="./img/LogoCasa2.png" alt="">Slytherin</button></li>
+                    <li><button class="casa3"><img src="./img/LogoCasa3.png" alt="">Ravenclaw</button></li>
+                    <li><button class="casa4"><img src="./img/LogoCasa4.png" alt="">Hufflepuff</button></li>
+                </ul>
+            </div>
+        </section>
+
+*/

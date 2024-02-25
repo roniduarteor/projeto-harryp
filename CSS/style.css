@@ -70,6 +70,8 @@ body{
     border-radius: 15px;
     background: #946B2D;
     box-shadow: 1px 4px 4px 0px rgba(0, 0, 0, 0.25), 0px 4px 4px 0px rgba(0, 0, 0, 0.25) inset;
+
+    margin-left: 75px;
 }
 
 .infos{
@@ -239,9 +241,130 @@ body{
 
 /* -------------------- MAIN HOGWARTS HOUSE -------------------------- */
 
+.filter{
+    width: 289.224px;
+    height: 401.314px;
+
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+
+    text-align: center;
+    
+}
+
+
+.filterBy{
+    color: #FFF;
+    font-family: "Roboto Mono";
+    font-size: 28px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.casasHogwarts{
+    display: flex;
+    gap: 17px;
+    flex-direction: column;
+}
+
 
 .casa1{
-    
+    width: 289.224px;
+    height: 74.815px;
+
+    color: #FFF;
+    text-align: center;
+    font-family: "Harry P";
+    font-size: 50px;
+    font-style: normal;
+    font-weight: 400;
+
+    background-color: #A81945;
+    border: none;
+    border-radius: 15px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+
+    filter: drop-shadow(3px 4px 4px rgba(0, 0, 0, 0.25));
+
+    cursor: pointer;
+}
+.casa2{
+    width: 289.224px;
+    height: 74.815px;
+
+    color: #FFF;
+    text-align: center;
+    font-family: "Harry P";
+    font-size: 50px;
+    font-style: normal;
+    font-weight: 400;
+
+    background-color: #324C1E;
+    border: none;
+    border-radius: 15px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+
+    filter: drop-shadow(3px 4px 4px rgba(0, 0, 0, 0.25));
+
+    cursor: pointer;
+}
+.casa3{
+    width: 289.224px;
+    height: 74.815px;
+
+    color: #FFF;
+    text-align: center;
+    font-family: "Harry P";
+    font-size: 50px;
+    font-style: normal;
+    font-weight: 400;
+
+    background-color: #154C82;
+    border: none;
+    border-radius: 15px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+
+    filter: drop-shadow(3px 4px 4px rgba(0, 0, 0, 0.25));
+
+    cursor: pointer;
+}
+.casa4{
+    width: 289.224px;
+    height: 74.815px;
+
+    color: #FFF;
+    text-align: center;
+    font-family: "Harry P";
+    font-size: 50px;
+    font-style: normal;
+    font-weight: 400;
+
+    background-color: #E0A828;
+    border: none;
+    border-radius: 15px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+
+    filter: drop-shadow(3px 4px 4px rgba(0, 0, 0, 0.25));
+
+    cursor: pointer;
 }
 
 

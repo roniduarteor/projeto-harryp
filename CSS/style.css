@@ -227,13 +227,130 @@ body{
     width: 100vw;
     height: 653px;
 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    padding: 28px;
+
 
     background-color: #222F5B;
     box-shadow: 6px 4px 17.1px 0px rgba(0, 0, 0, 0.50), 0px 0px 40px -13px rgba(0, 0, 0, 0.25) inset, -6px -4px 17.1px 0px rgba(0, 0, 0, 0.15), 0px 4px 138px 64px rgba(0, 0, 0, 0.25) inset;
 }
 
+.characters-cards{
+    margin-top: 28px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 2fr;
 
+    height: 542.281px;
 
+    gap: 19.72px;
+}
+
+.principaisInfos{
+    width: 492.004px;
+    height: 167.281px;
+    padding: 7px;
+
+    background-color: #0E1A42;
+    border-radius: 15px;
+
+    display: flex;
+
+    filter: drop-shadow(6px 4px 4px rgba(0, 0, 0, 0.25));
+}
+.principaisInfos .character-img img{
+    width: 176.14px;
+    height: 152px;
+
+    border-radius: 10px;
+}
+
+.infos-texto{
+    width: 473px;
+    height: 152px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    
+    margin-left: 17.86px;
+}
+
+.infos-texto h2{
+    color: #946B2D;
+    font-family: "Harry P";
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 400;
+    
+}
+
+.infos-texto h4{
+    color: #5D5D5D;
+    font-family: "Roboto Mono";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+
+    margin-left: 24.86px;
+
+}
+
+.infos-texto .nicknamesText{
+    width: 279px;
+
+    color: #946B2D;
+    font-family: "Roboto Mono";
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 1.2;
+}
+
+.infos-texto  a{
+    width: 120.049px;
+    height: 31.488px;
+
+    background-color: #222F5B;
+    border-radius: 10px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    margin-top: 7.03px;
+}
+
+.infos-texto  a .saibaMaisText{
+    color: #FFF;
+    font-family: "Roboto Mono";
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 700;
+}
+
+/* 
+
+    <section class="principaisInfos">
+
+        <div class="character-img">
+            <img src="${item.image}">
+        </div>
+        
+        <div class="infos-texto">
+        <h2>${item.name}</h2>
+
+        <h4 class="nickname">Nicknames</h4>
+
+        <p class="nicknamesText">${item.alternate_names}</p>
+
+        <a href="" class="saibaMais"><p class="saibaMaisText">"Saiba Mais</p></a>
+        </div>
+        
+    </section>
+     */
 
 
 
@@ -267,6 +384,8 @@ body{
     display: flex;
     gap: 17px;
     flex-direction: column;
+
+    list-style-type: none;
 }
 
 

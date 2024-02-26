@@ -241,17 +241,20 @@ body{
 .characters-cards{
     margin-top: 28px;
     display: grid;
-    grid-template-columns: 1fr 1fr 2fr;
+    grid-template-columns: 1fr 1fr 1fr;
 
-    height: 542.281px;
+    gap: 10px;
+    
 
-    gap: 19.72px;
+    width: 100%;
+    height: 55vh;
+    margin: 10px;
 }
 
 .principaisInfos{
-    width: 492.004px;
-    height: 167.281px;
-    padding: 7px;
+    width: 28vw;
+    height: 180px;
+    padding: 10px;
 
     background-color: #0E1A42;
     border-radius: 15px;
@@ -261,14 +264,14 @@ body{
     filter: drop-shadow(6px 4px 4px rgba(0, 0, 0, 0.25));
 }
 .principaisInfos .character-img img{
-    width: 176.14px;
-    height: 152px;
+    width: 8vw;
+    height: 160px;
 
     border-radius: 10px;
 }
 
 .infos-texto{
-    width: 473px;
+    width: 100%;
     height: 152px;
 
     display: flex;
@@ -281,7 +284,7 @@ body{
 .infos-texto h2{
     color: #946B2D;
     font-family: "Harry P";
-    font-size: 48px;
+    font-size: 330%;
     font-style: normal;
     font-weight: 400;
     
@@ -299,14 +302,15 @@ body{
 }
 
 .infos-texto .nicknamesText{
-    width: 279px;
+    width: 100%;
 
     color: #946B2D;
     font-family: "Roboto Mono";
-    font-size: 14px;
+    font-size: 80%;
     font-style: normal;
     font-weight: 700;
     line-height: 1.2;
+
 }
 
 .infos-texto  a{
@@ -331,27 +335,6 @@ body{
     font-weight: 700;
 }
 
-/* 
-
-    <section class="principaisInfos">
-
-        <div class="character-img">
-            <img src="${item.image}">
-        </div>
-        
-        <div class="infos-texto">
-        <h2>${item.name}</h2>
-
-        <h4 class="nickname">Nicknames</h4>
-
-        <p class="nicknamesText">${item.alternate_names}</p>
-
-        <a href="" class="saibaMais"><p class="saibaMaisText">"Saiba Mais</p></a>
-        </div>
-        
-    </section>
-     */
-
 
 
 
@@ -359,7 +342,7 @@ body{
 /* -------------------- MAIN HOGWARTS HOUSE -------------------------- */
 
 .filter{
-    width: 289.224px;
+    width: 100%;
     height: 401.314px;
 
     display: flex;
@@ -374,10 +357,11 @@ body{
 .filterBy{
     color: #FFF;
     font-family: "Roboto Mono";
-    font-size: 28px;
+    font-size: 150%;
     font-style: normal;
     font-weight: 700;
     line-height: normal;
+    width: 100%;
 }
 
 .casasHogwarts{
@@ -390,13 +374,14 @@ body{
 
 
 .casa1{
-    width: 289.224px;
+    width: 100%;
     height: 74.815px;
+    padding: 10px;
 
     color: #FFF;
     text-align: center;
     font-family: "Harry P";
-    font-size: 50px;
+    font-size: 250%;
     font-style: normal;
     font-weight: 400;
 
@@ -405,22 +390,33 @@ body{
     border-radius: 15px;
 
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
-    gap: 20px;
 
     filter: drop-shadow(3px 4px 4px rgba(0, 0, 0, 0.25));
 
     cursor: pointer;
 }
+
+.casa1 p{
+    width: 100%;
+    font-size: 100%;
+}
+
+.casa1 img{
+    width: 3vw;
+}
+
+
 .casa2{
-    width: 289.224px;
+    width: 100%;
     height: 74.815px;
+    padding: 10px;
 
     color: #FFF;
     text-align: center;
     font-family: "Harry P";
-    font-size: 50px;
+    font-size: 45px;
     font-style: normal;
     font-weight: 400;
 
@@ -429,22 +425,32 @@ body{
     border-radius: 15px;
 
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
-    gap: 20px;
 
     filter: drop-shadow(3px 4px 4px rgba(0, 0, 0, 0.25));
 
     cursor: pointer;
 }
+
+.casa2 p{
+    width: 100%;
+    font-size: 100%;
+}
+
+.casa2 img{
+    width: 3vw;
+}
+
 .casa3{
-    width: 289.224px;
+    width: 100%;
     height: 74.815px;
+    padding: 10px;
 
     color: #FFF;
     text-align: center;
     font-family: "Harry P";
-    font-size: 50px;
+    font-size: 45px;
     font-style: normal;
     font-weight: 400;
 
@@ -453,22 +459,32 @@ body{
     border-radius: 15px;
 
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
-    gap: 20px;
 
     filter: drop-shadow(3px 4px 4px rgba(0, 0, 0, 0.25));
 
     cursor: pointer;
 }
+
+.casa3 p{
+    width: 100%;
+    font-size: 100%;
+}
+
+.casa3 img{
+    width: 3vw;
+}
+
 .casa4{
-    width: 289.224px;
+    width: 100%;
     height: 74.815px;
+    padding: 10px;
 
     color: #FFF;
     text-align: center;
     font-family: "Harry P";
-    font-size: 50px;
+    font-size: 45px;
     font-style: normal;
     font-weight: 400;
 
@@ -477,31 +493,92 @@ body{
     border-radius: 15px;
 
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
-    gap: 20px;
 
     filter: drop-shadow(3px 4px 4px rgba(0, 0, 0, 0.25));
 
     cursor: pointer;
 }
 
+.casa4 p{
+    width: 100%;
+    font-size: 100%;
+}
+
+.casa4 img{
+    width: 3vw;
+}
 
 
-/* 
 
-<section class="character-container" id="character-container">
 
-            <div class="filter">
-                <p class="filterBy">Filter by:</p>
 
-                <ul>
-                    <li><button class="casa1"><img src="./img/LogoCasa.png" alt="">Griffyndor</button></li>
-                    <li><button class="casa2"><img src="./img/LogoCasa2.png" alt="">Slytherin</button></li>
-                    <li><button class="casa3"><img src="./img/LogoCasa3.png" alt="">Ravenclaw</button></li>
-                    <li><button class="casa4"><img src="./img/LogoCasa4.png" alt="">Hufflepuff</button></li>
-                </ul>
-            </div>
-        </section>
 
-*/
+/* -------------------- PASSAR PÁGINA -------------------------- */
+
+.pageButtons{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+
+    width: 100%;
+
+    gap: 15px;
+    margin-top: 25px;
+}
+
+.pageButtons .pageText{
+    color: #FFF;
+    font-family: Roboto;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+}
+
+.pageButtons .buttons{
+    display: flex;
+    flex-direction: row;
+}
+
+.pageButtons button{
+    width: 45px;
+    height: 45px;
+
+    background-color: #222F5B;
+    border: none;
+    border-radius: 100px;
+
+    color: white;
+    font-size: 30px;
+    font-family: 'Roboto Mono';
+}
+
+.buttons{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    gap: 15px;
+}
+
+.pageButtons .buttons .pageIndex{
+    width: 54px;
+    height: 25px;
+
+    border-radius: 15px;
+
+    background-color: #946B2D;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    color: #FFFAFA;
+    font-family: "Roboto Mono";
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+
+}

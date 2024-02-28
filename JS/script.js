@@ -125,6 +125,10 @@ function mostrarPersonagens(items) { // items vai receber data, q data é os dad
                 pagina = pagina - 1    
                 const numPagina = document.querySelector('.pagina')
                 numPagina.innerHTML = `${pagina}`
+
+                if(pagina < 1){
+                    alert("Página não existente!")
+                }
         
         })
 
@@ -250,7 +254,7 @@ function mostrarPersonagens(items) { // items vai receber data, q data é os dad
 
 }
 
-function fetchCharacters(url) { // isso aqui pra atualizar o fetch e conseguir filtrar
+function fetchCharacters(url) { // isso aqui pra atualizar o fetch e conseguir filtrar pelas casas
     fetch(url)
         .then((response) => {
             if (!response.ok) {

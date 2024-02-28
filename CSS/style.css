@@ -333,6 +333,8 @@ body{
     font-size: 14px;
     font-style: normal;
     font-weight: 700;
+
+    text-decoration: none;
 }
 
 
@@ -531,7 +533,7 @@ body{
 
 .pageButtons .pageText{
     color: #FFF;
-    font-family: Roboto;
+    font-family: 'Roboto Mono';
     font-size: 20px;
     font-style: normal;
     font-weight: 700;
@@ -553,6 +555,8 @@ body{
     color: white;
     font-size: 30px;
     font-family: 'Roboto Mono';
+
+    cursor: pointer;
 }
 
 .buttons{
@@ -563,7 +567,7 @@ body{
     gap: 15px;
 }
 
-.pageButtons .buttons .pageIndex{
+.pageButtons .buttons .pagina{
     width: 54px;
     height: 25px;
 

@@ -1,0 +1,649 @@
+:root{
+    --azul-escuro: #0E1A42;
+    --azul-claro: #222F5B;
+}
+
+@font-face {
+    font-family: 'Harry P';
+    src: url('../fonts/HARRYP__.TTF') format('truetype');
+}
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: #0E1A42;
+    background-image: url('../img/LoginBackground.png');
+}
+
+
+/* -------------------- HEADER E NAV BAR -------------------------- */
+.header{
+    width: 100vw;
+    height: 96px;
+    
+    background-color: #222F5B;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.navbar{
+    height: 76px;
+    width: 93.05555556vw;
+
+    display: flex;
+    flex-direction: row;
+    justify-content:center;
+    align-items: center;
+
+    gap: 217px;
+}
+
+.logoImgName{
+    display: flex;
+    gap: 14.39px;
+}
+
+.logoImgName .logoName{
+    height: 51;
+    color: #FFF;
+    font-family: "Harry P";
+    font-size: 54px;
+    font-style: normal;
+    font-weight: 400;
+
+    text-decoration: none;
+    margin-top: 12px;
+}
+
+.decorationBar{
+    width: 424px;
+    height: 11px;
+
+    border-radius: 15px;
+    background: #946B2D;
+    box-shadow: 1px 4px 4px 0px rgba(0, 0, 0, 0.25), 0px 4px 4px 0px rgba(0, 0, 0, 0.25) inset;
+
+    margin-left: 75px;
+}
+
+.infos{
+    width: 255px;
+    height: 49px;
+
+    display: flex;
+    gap: 20px;
+}
+
+.infos .login{
+    width: 105px;
+    height: 49px;
+
+    border-radius: 15px;
+    background: #946B2D;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.infos .login .loginName{
+    color: #FFF;
+    font-family: "Harry P";
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 400;
+    text-decoration: none;
+}
+
+
+
+.infos .aboutUs{
+    width: 105px;
+    height: 49px;
+
+    border-radius: 15px;
+    border: 1px solid #946B2D;
+    background: #222F5B;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.infos .aboutUs:hover{
+    background: #946B2D;
+    cursor: pointer;
+}
+.infos .aboutUs .aboutUsName{
+    color: #FFF;
+    font-family: "Harry P";
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 400;
+    text-decoration: none;
+}
+
+
+
+
+
+
+/* -------------------- MAIN TITLE -------------------------- */
+
+
+.hero{
+    width: 100vw;
+    height: 571px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    background-image: url('../img/Wizch\ 1\ \(1\).png');
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.hero h1{
+    width: 580px;
+    height: 140px;
+
+    color: #FFF;
+    font-family: "Harry P";
+    font-size: 140px;
+    font-style: normal;
+    font-weight: 400;
+
+    margin-bottom: -30px;
+}
+.hero h2{
+    text-align: center;
+
+    width: 580px;
+    height: 140px;
+
+    color: #FFF;
+    font-family: "Harry P";
+    font-size: 140px;
+    font-style: normal;
+    font-weight: 400;
+}
+
+
+
+
+
+
+
+/* -------------------- MAIN CHARACTERS TITLE -------------------------- */
+
+
+.characterTitleList{
+    width: 489px;
+    height: 62px;
+    
+    background-color: #FFF;
+    border-radius: 15px;
+
+    filter: drop-shadow(4px 4px 4px rgba(0, 0, 0, 0.25));
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    margin-left: 79px;
+    margin-top: 64px;
+
+    margin-bottom: -28px;
+}
+
+.titleListText{
+    color: #0E1A42;
+    font-family: "Roboto Mono", monospace; 
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 700;
+}
+
+
+
+
+
+
+
+
+
+/* -------------------- MAIN CHARACTERS -------------------------- */
+
+
+.character-container{
+    width: 100vw;
+    height: 653px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    padding: 28px;
+
+
+    background-color: #222F5B;
+    box-shadow: 6px 4px 17.1px 0px rgba(0, 0, 0, 0.50), 0px 0px 40px -13px rgba(0, 0, 0, 0.25) inset, -6px -4px 17.1px 0px rgba(0, 0, 0, 0.15), 0px 4px 138px 64px rgba(0, 0, 0, 0.25) inset;
+}
+
+.characters-cards{
+    margin-top: 28px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+
+    gap: 10px;
+    
+
+    width: 100%;
+    height: 55vh;
+    margin: 10px;
+}
+
+.principaisInfos{
+    width: 28vw;
+    height: 180px;
+    padding: 10px;
+
+    background-color: #0E1A42;
+    border-radius: 15px;
+
+    display: flex;
+
+    filter: drop-shadow(6px 4px 4px rgba(0, 0, 0, 0.25));
+}
+.principaisInfos .character-img img{
+    width: 8vw;
+    height: 160px;
+
+    border-radius: 10px;
+}
+
+.infos-texto{
+    width: 100%;
+    height: 152px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    
+    margin-left: 17.86px;
+}
+
+.infos-texto h2{
+    color: #946B2D;
+    font-family: "Harry P";
+    font-size: 330%;
+    font-style: normal;
+    font-weight: 400;
+    
+}
+
+.infos-texto h4{
+    color: #5D5D5D;
+    font-family: "Roboto Mono";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+
+    margin-left: 24.86px;
+
+}
+
+.infos-texto .nicknamesText{
+    width: 100%;
+
+    color: #946B2D;
+    font-family: "Roboto Mono";
+    font-size: 80%;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 1.2;
+
+}
+
+.infos-texto  a{
+    width: 120.049px;
+    height: 31.488px;
+
+    background-color: #222F5B;
+    border-radius: 10px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    margin-top: 7.03px;
+}
+
+.infos-texto  a .saibaMaisText{
+    color: #FFF;
+    font-family: "Roboto Mono";
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 700;
+
+    text-decoration: none;
+}
+
+.infos-texto a{
+    text-decoration: none;
+}
+
+
+
+
+
+/* -------------------- MAIN HOGWARTS HOUSE -------------------------- */
+
+.filter{
+    width: 100%;
+    height: 401.314px;
+
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+
+    text-align: center;
+    
+}
+
+
+.filterBy{
+    color: #FFF;
+    font-family: "Roboto Mono";
+    font-size: 150%;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    width: 100%;
+}
+
+.casasHogwarts{
+    display: flex;
+    gap: 17px;
+    flex-direction: column;
+
+    list-style-type: none;
+}
+
+
+.casa1{
+    width: 100%;
+    height: 74.815px;
+    padding: 10px;
+
+    color: #FFF;
+    text-align: center;
+    font-family: "Harry P";
+    font-size: 250%;
+    font-style: normal;
+    font-weight: 400;
+
+    background-color: #A81945;
+    border: none;
+    border-radius: 15px;
+
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+    filter: drop-shadow(3px 4px 4px rgba(0, 0, 0, 0.25));
+
+    cursor: pointer;
+}
+
+.casa1 p{
+    width: 100%;
+    font-size: 100%;
+}
+
+.casa1 img{
+    width: 3vw;
+}
+
+
+.casa2{
+    width: 100%;
+    height: 74.815px;
+    padding: 10px;
+
+    color: #FFF;
+    text-align: center;
+    font-family: "Harry P";
+    font-size: 45px;
+    font-style: normal;
+    font-weight: 400;
+
+    background-color: #324C1E;
+    border: none;
+    border-radius: 15px;
+
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+    filter: drop-shadow(3px 4px 4px rgba(0, 0, 0, 0.25));
+
+    cursor: pointer;
+}
+
+.casa2 p{
+    width: 100%;
+    font-size: 100%;
+}
+
+.casa2 img{
+    width: 3vw;
+}
+
+.casa3{
+    width: 100%;
+    height: 74.815px;
+    padding: 10px;
+
+    color: #FFF;
+    text-align: center;
+    font-family: "Harry P";
+    font-size: 45px;
+    font-style: normal;
+    font-weight: 400;
+
+    background-color: #154C82;
+    border: none;
+    border-radius: 15px;
+
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+    filter: drop-shadow(3px 4px 4px rgba(0, 0, 0, 0.25));
+
+    cursor: pointer;
+}
+
+.casa3 p{
+    width: 100%;
+    font-size: 100%;
+}
+
+.casa3 img{
+    width: 3vw;
+}
+
+.casa4{
+    width: 100%;
+    height: 74.815px;
+    padding: 10px;
+
+    color: #FFF;
+    text-align: center;
+    font-family: "Harry P";
+    font-size: 45px;
+    font-style: normal;
+    font-weight: 400;
+
+    background-color: #E0A828;
+    border: none;
+    border-radius: 15px;
+
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+    filter: drop-shadow(3px 4px 4px rgba(0, 0, 0, 0.25));
+
+    cursor: pointer;
+}
+
+.casa4 p{
+    width: 100%;
+    font-size: 100%;
+}
+
+.casa4 img{
+    width: 3vw;
+}
+
+
+
+
+
+
+/* -------------------- PASSAR PÁGINA -------------------------- */
+
+.pageButtons{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+
+    width: 100%;
+
+    gap: 15px;
+    margin-top: 25px;
+}
+
+.pageButtons .pageText{
+    color: #FFF;
+    font-family: 'Roboto Mono';
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+}
+
+.pageButtons .buttons{
+    display: flex;
+    flex-direction: row;
+}
+
+.pageButtons button{
+    width: 45px;
+    height: 45px;
+
+    background-color: #222F5B;
+    border: none;
+    border-radius: 100px;
+
+    color: white;
+    font-size: 30px;
+    font-family: 'Roboto Mono';
+
+    cursor: pointer;
+}
+
+.buttons{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    gap: 15px;
+}
+
+.pageButtons .buttons .pagina{
+    width: 54px;
+    height: 25px;
+
+    border-radius: 15px;
+
+    background-color: #946B2D;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    color: #FFFAFA;
+    font-family: "Roboto Mono";
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+
+}
+
+
+
+/*                  FOOTER                   */
+
+
+footer{
+    width: 100%;
+    height: 184px;
+    background-color: #222F5B;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 21px;
+    padding: 31px;
+
+    margin-top: 46px;
+}
+
+footer .iconsLink a{
+    padding: 5px;
+    text-decoration: none;
+}
+
+footer .copyrightText{
+    color: #FFF;
+    font-family: 'Roboto Mono';
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 400;
+}
+
+footer .pagesLinks{
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+footer .pagesLinks a{
+    text-decoration: none;
+}
+footer .pagesLinks p{
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+
+    color: #FFF;
+    font-family: 'Roboto Mono';
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 400;
+    text-decoration: none;
+}
+footer .pagesLinks p:hover{
+    color: #946B2D;
+}

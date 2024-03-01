@@ -44,7 +44,7 @@ function mostrarPersonagens(items) { // items vai receber data, q data é os dad
 
                 <p class="nicknamesText">${noNicknames(item.alternate_names)}</p>
 
-                <a href="" class="saibaMais"><p class="saibaMaisText">Saiba Mais</p></a>
+                
             </div>
         
         </section>
@@ -53,7 +53,13 @@ function mostrarPersonagens(items) { // items vai receber data, q data é os dad
 
 
         charactersInformations.classList.add('charactersBox')
-        containerPerso.appendChild(charactersInformations)
+        containerPerso.appendChild(charactersInformations);
+
+        charactersInformations.addEventListener('click', async()=>{
+            characterDetails(item.id)
+        })
+
+        
     })
 
 
@@ -63,76 +69,83 @@ function mostrarPersonagens(items) { // items vai receber data, q data é os dad
 
 
     btnVoltar.addEventListener('click', () => {
-        containerPerso.innerHTML = ""//todos os filhos, elementos html q tiver escrito dentro de container person será subistituido por " "
+        if (pagina > 1) { // verifica se a página atual é maior que 1, pra ele n ir pra página 0 ou <0
+            containerPerso.innerHTML = "" //todos os filhos, elementos html q tiver escrito dentro de container person será subistituido por " "
 
-        
-
-        limitarPersonagem(indiceInicial, indiceFinal, dataIndice).map((item) => {// essa função vai ser retornada um slice()
-            /*vai chamar a função limitar personagem:
-
-                function limitarPersonagem(indexInicial, indexFinal, items) { 9,18
-                    let indFinal = indexFinal
-                    let indInicial = indexInicial
-
-                    indFinal = indInicial 
-                    indInicial = indInicial - 9 
-
-                    return items.slice(indInicial, indFinal) 
-
-                }
-            */
-
-            const charactersInformations = document.createElement('div')
-            charactersInformations.innerHTML = `
+            limitarPersonagem(indiceInicial, indiceFinal, dataIndice).map((item) => {// essa função vai ser retornada um slice()
+                /*vai chamar a função limitar personagem:
     
-            <section class="principaisInfos">
+                    function limitarPersonagem(indexInicial, indexFinal, items) { 9,18
+                        let indFinal = indexFinal
+                        let indInicial = indexInicial
     
-                <div class="character-img">
-                    ${addImage(item.image)}
-                </div>
+                        indFinal = indInicial 
+                        indInicial = indInicial - 9 
+    
+                        return items.slice(indInicial, indFinal) 
+    
+                    }
+                */
+    
+                const charactersInformations = document.createElement('div')
+                charactersInformations.innerHTML = `
+        
+                <section class="principaisInfos">
+        
+                    <div class="character-img">
+                        ${addImage(item.image)}
+                    </div>
+                
+                    <div class="infos-texto">
+                        <h2>${item.name}</h2>
             
-                <div class="infos-texto">
-                    <h2>${item.name}</h2>
-        
-                    <h4 class="nickname">Nicknames</h4>
-        
-                    <p class="nicknamesText">${noNicknames(item.alternate_names)}</p>
-        
-                    <a href="" class="saibaMais"><p class="saibaMaisText">Saiba Mais</p></a>
-                </div>
+                        <h4 class="nickname">Nicknames</h4>
             
-            </section>
-            `;
-
+                        <p class="nicknamesText">${noNicknames(item.alternate_names)}</p>
             
+                        
+                    </div>
+                
+                </section>
+                `;
+    
+                
+    
+                charactersInformations.classList.add('charactersBox')
+                containerPerso.appendChild(charactersInformations)
+            })
+            
+            //indice final = 9
+            //indice inicial = 0
+            indiceFinal = valorFina(indiceFinal)
+            indiceInicial = valorFina(indiceInicial) 
+                /*
+                    function valorFina(valFinal) {         
+                        valFinal = valFinal - 9             
+    
+                        return valFinal 
+                    } 
+       
+                */
+                    paginaAnt = pagina
+                    pagina = pagina - 1    
+                    const numPagina = document.querySelector('.pagina')
+                    numPagina.innerHTML = `${pagina}`
+        }
+    });
 
-            charactersInformations.classList.add('charactersBox')
-            containerPerso.appendChild(charactersInformations)
-        })
         
-        //indice final = 9
-        //indice inicial = 0
-        indiceFinal = valorFina(indiceFinal)
-        indiceInicial = valorFina(indiceInicial) 
-            /*
-                function valorFina(valFinal) {         
-                    valFinal = valFinal - 9             
 
-                    return valFinal 
-                } 
-   
-            */
-                paginaAnt = pagina
-                pagina = pagina - 1    
-                const numPagina = document.querySelector('.pagina')
-                numPagina.innerHTML = `${pagina}`
         
-        })
+        
+
 
 
 
 
     btnAvancar.addEventListener('click', () => {
+        const totalPages = Math.ceil(dataIndice.length / 9); // calcula o número total de páginas
+    if (pagina < totalPages) { // verifica se a página q ele ta é menor que o número total de páginas
         containerPerso.innerHTML = ""//todos os filhos, elementos html q tiver escrito dentro de container person será subistituido por " "
 
 
@@ -168,7 +181,7 @@ function mostrarPersonagens(items) { // items vai receber data, q data é os dad
         
                     <p class="nicknamesText">${noNicknames(item.alternate_names)}</p>
         
-                    <a href="" class="saibaMais"><p class="saibaMaisText">Saiba Mais</p></a>
+                    
                 </div>
             
             </section>
@@ -178,6 +191,10 @@ function mostrarPersonagens(items) { // items vai receber data, q data é os dad
 
             charactersInformations.classList.add('charactersBox')
             containerPerso.appendChild(charactersInformations)
+
+            charactersInformations.addEventListener('click', async()=>{
+                characterDetails(item.id)
+            })
         })
         
         //indice final = 18
@@ -197,7 +214,7 @@ function mostrarPersonagens(items) { // items vai receber data, q data é os dad
                 pagina = pagina + 1    
                 const numPagina = document.querySelector('.pagina')
                 numPagina.innerHTML = `${pagina}`
-        
+            }
         })
     
         const btnGryffindor = document.querySelector('.casa1')
@@ -210,6 +227,8 @@ function mostrarPersonagens(items) { // items vai receber data, q data é os dad
      pagina = 1
      paginaAnt = 0
     fetchCharacters(baseUrl)
+
+    
 })
 
         const btnSlytherin = document.querySelector('.casa2')
@@ -249,6 +268,10 @@ function mostrarPersonagens(items) { // items vai receber data, q data é os dad
 
 
 
+}
+
+function characterDetails(id){
+    window.location.href = `./PAGES/person.html?id=${id}`
 }
 
 function fetchCharacters(url) { // isso aqui pra atualizar o fetch e conseguir filtrar

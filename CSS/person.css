@@ -72,8 +72,6 @@ body{
     border-radius: 15px;
     background: #946B2D;
     box-shadow: 1px 4px 4px 0px rgba(0, 0, 0, 0.25), 0px 4px 4px 0px rgba(0, 0, 0, 0.25) inset;
-
-    margin-left: 75px;
 }
 
 .infos{
@@ -136,190 +134,33 @@ body{
 
 
 
-/* -------------------- MAIN -------------------------- */
 
+/* -------------------- MAIN -------------------------- */
 main{
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    margin-top: 53px;
+    margin-top: 50px;
 }
 
-.mainLogo{
-    margin-bottom: 54px;
-}
-
-main form{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-
-    width: 613px;
-    height: 754px;
-
-
-    border-radius: 10px;
-background: rgba(34, 47, 91, 0.70);
-box-shadow: 6px 4px 17.1px 0px rgba(0, 0, 0, 0.50), 0px 0px 40px -13px rgba(255, 255, 255, 0.25) inset, -6px -4px 17.1px 0px rgba(0, 0, 0, 0.15), 0px 4px 138px 64px rgba(0, 0, 0, 0.25) inset;
-
-}
-
-.loginBox{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-
-    flex-direction: column;
-}
-
-.loginBox .loginText{
+.title-box .mainTitle{
     color: #FFF;
     font-family: "Harry P";
-    font-size: 128px;
+    font-size: 96px;
     font-style: normal;
     font-weight: 400;
+    margin-bottom: 23px;
+}
+.informatio-box{
+    width: 1116px;
+    height: 818px;
 
-    display: flex;
-    align-items: center;
-    justify-content: center;
-
-    margin-bottom: 100px;
+    border-radius: 10px;
+    background: #222F5B;
+    box-shadow: 6px 4px 17.1px 0px rgba(0, 0, 0, 0.50), 0px 0px 40px -13px rgba(255, 255, 255, 0.25) inset, -6px -4px 17.1px 0px rgba(0, 0, 0, 0.15), 0px 4px 138px 64px rgba(0, 0, 0, 0.25) inset;
 }
 
-.loginBox .user{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-.loginBox .user input{
-    padding-right: 100px;
-    
-    width: 473px;
-    height: 63px;
-    border: 1px solid #FFF;
-    border-top: none;
-    border-left: none;
-    border-right: none;
-    background: none;
-    outline: none;
-    box-shadow: 0 0 0 0;
-
-    color: white;
-    font-size: 32px;
-    
-
-    margin-right: -60px;
-    
-}
-.loginBox .user input::placeholder{
-    color: rgb(188, 188, 188);
-    font-family: 'Roboto Mono';
-    font-size: 32px;
-    font-style: normal;
-    font-weight: 300;
-}
-
-.loginBox .password{
-    margin-top: 66px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-.loginBox .password input{
-    padding-right: 100px;
-    
-    width: 473px;
-    height: 63px;
-    border: 1px solid #FFF;
-    border-top: none;
-    border-left: none;
-    border-right: none;
-    background: none;
-    outline: none;
-    box-shadow: 0 0 0 0;
-
-    color: white;
-    font-size: 32px;
-
-    margin-right: -60px;
-    
-}
-.loginBox .password input::placeholder{
-    color: rgb(188, 188, 188);
-    font-family: 'Roboto Mono';
-    font-size: 32px;
-    font-style: normal;
-    font-weight: 300;
-}
-
-
-.rememberAndForgot{
-    width: 431px;
-    height: 21px;
-
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-
-    margin-top: 28px;
-}
-
-.rememberAndForgot .rememberMe label{
-    color: #FFF;
-    font-family: "Roboto Mono";
-    font-size: 16px;
-    font-style: normal;
-    font-weight: 300;
-
-}
-
-.rememberAndForgot .forgotPassword a{
-    color: #5D5D5D;
-    font-family: "Roboto Mono";
-    font-size: 16px;
-    font-style: normal;
-    font-weight: 500;
-    text-decoration: none;
-}
-
-.btnLoginAndDontHave{
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-}
-
-.btnLoginAndDontHave .btnLogin{
-    width: 366px;
-    height: 60px;
-
-    border-radius: 15px;
-    background: #0E1A42;
-    border: none;
-
-    color: #FFF;
-    font-family: "Roboto Mono";
-    font-size: 32px;
-    font-style: normal;
-    font-weight: 700;
-    
-    margin-top: 62px;
-
-    cursor: pointer;
-}
-
-.btnLoginAndDontHave p{
-    margin-top: 31px;
-
-    color: #FFF;
-    font-family: "Roboto Mono";
-    font-size: 15px;
-    font-style: normal;
-    font-weight: 500;
-    text-decoration: none;
-}
 
 
 /*                  FOOTER                   */

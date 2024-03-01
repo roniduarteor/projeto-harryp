@@ -301,7 +301,7 @@ function noNicknames(alternate_names) {
     if (alternate_names == "") {
         return `No nicknames found`
     } else {
-        return `${alternate_names}`
+        return `${alternate_names.slice(0,2)}`
     }
 }
 

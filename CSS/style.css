@@ -241,6 +241,7 @@ body{
 .characters-cards{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
+    margin-right: 15px;
 
     gap: 10px;
     
@@ -251,7 +252,7 @@ body{
 }
 
 .principaisInfos{
-    width: 28vw;
+    width: 25vw;
     height: 180px;
     padding: 10px;
 

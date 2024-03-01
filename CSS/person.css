@@ -163,6 +163,252 @@ main{
 
 
 
+/*               MAIN CHARACTERS             */
+.informatio-box{
+    display: flex;
+    flex-direction: row;
+}
+.character-information{
+    width: 100%;
+    height: 100%;
+
+    display: flex;
+    flex-direction: row;
+}
+
+.character-box{
+    display: flex;
+    flex-direction: row;
+    padding: 28px;
+    justify-content: center;
+}
+.character-information .personImg{
+    width: 100%;
+    height: 100%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 10px;
+}
+.character-information .personImg img{
+    width: 387px;
+    height: 736px;
+
+    border-radius: 10px;
+}
+
+
+/*              PRIMEIRAS INFOS               */
+
+.geralInformations .primeirasInfos{
+    width: 650px;
+    height: 250px;
+    margin-left: 28px;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    
+}
+
+.primeirasInfos .infos-texto{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.primeirasInfos .infos-texto h2{
+    color: #946B2D;
+    font-family: "Harry P";
+    font-size: 76px;
+    font-style: normal;
+    font-weight: 400;
+}
+.primeirasInfos .infos-texto h4{
+    color: #5D5D5D;
+    font-family: "Roboto Mono";
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+
+    margin-left: 20px;
+}
+.primeirasInfos .infos-texto .nicknamesText{
+    width: 377px;
+    color: #946B2D;
+    font-family: "Roboto Mono";
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 700;
+}
+.primeirasInfos .infos-texto .blood{
+    width: 167px;
+    height: 41px;
+    
+    border-radius: 17px;
+    background: #946B2D;
+
+    color: #FFF;
+    font-family: "Roboto Mono";
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hogwartsHouse{
+    width: 200px;
+    height: 200px;
+    display: flex;
+    flex-direction: row;
+}
+
+
+/*              SEGUNDAS INFOS                   */
+
+.segundasInfos{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+    margin-top: 30px;
+}
+
+.infoBox{
+    border-radius: 10px;
+    background: #0E1A42;
+    width: 177.746px;
+    height: 92.047px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    color: #FFF;
+    font-family: "Harry P";
+
+    margin-left: 28px;
+}
+
+.infoBox p{
+    color: #FFF;
+    font-family: "Harry P";
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.infoBox .gender{
+    font-size: 60px;
+}
+.infoBox .species{
+    font-size: 60px;
+}
+
+/*              TERCEIRAS INFOS                   */
+
+.terceiraInfos{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    gap: 20px;
+    margin-top: 37px;
+}
+
+.terceiraInfos h4{
+    color: #FFF;
+    font-family: "Roboto Mono";
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 700;
+}
+
+.wandInfos{
+    display: flex;
+    flex-direction: column;
+
+    gap: 10px;
+}
+
+.wood{
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+
+
+.core{
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+
+.length{
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+
+
+.category{
+    width: 110.034px;
+    height: 33.856px;
+
+    border-radius: 10px;
+    background: #0E1A42;
+
+    color: #FFF;
+    font-family: "Roboto Mono";
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.material{
+    color: #946B2D;
+    font-family: "Roboto Mono";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+
+    text-align: center;
+}
+
+.backBtn{
+    width: 484.381px;
+    height: 58.8px;
+
+    border-radius: 15px;
+    background: #946B2D;
+
+    border: none;
+    text-decoration: none;
+
+    margin-top: 40px;
+}
+.backBtn p{
+    
+
+    color: #FFF;
+    text-align: center;
+    font-family: "Roboto Mono";
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 700;
+    
+}
 /*                  FOOTER                   */
 
 

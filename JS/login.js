@@ -31,7 +31,7 @@ const login = data.find((objeto) => objeto.usuario === user && objeto.senha === 
 if(login){
     window.location = '../index.html'
 }else{
-    alert('usuario não encontrado')
+    alert('User not found, try again!')
 }
 
 })

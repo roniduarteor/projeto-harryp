@@ -64,7 +64,7 @@ body{
 }
 
 .decorationBar{
-    width: 424px;
+    width: 100%;
     height: 11px;
 
     border-radius: 15px;
@@ -708,6 +708,18 @@ footer .pagesLinks p:hover{
 /*                      RESPONSIVIDADE                        */
 
 @media screen and (max-width: 1024px){
+    body{
+        background-size: 100% 60%;
+        background-repeat: no-repeat;
+        width: 768px;
+    }
+
+
+    .decorationBar{
+        position: absolute;
+        width: 0px;
+    }
+
     .character-container{
         height: 700px;
         display: flex;
@@ -722,7 +734,7 @@ footer .pagesLinks p:hover{
         height: 500px;
     }
     .charactersBox{
-        width: 300px;
+        width: 100%;
         height: 150px;
     }
     .principaisInfos{
@@ -734,8 +746,12 @@ footer .pagesLinks p:hover{
         justify-content: center;
         align-items: center;
     }
+    .character-img{
+        height: 100%;
+    }
     .principaisInfos .character-img img{
         height: 100%;
+        width: 10vw;
     }
     .infos-texto h2{
         font-size: 39px;
@@ -754,8 +770,10 @@ footer .pagesLinks p:hover{
     }
 
     .casa1, .casa2, .casa3, .casa4{
-        width: 210px;
+        font-size: 40px;
+        width: 100%;
         height: 60px;
+        gap: 5px;
     }
     
 }
@@ -770,18 +788,22 @@ footer .pagesLinks p:hover{
     }
 
     body{
-        background-size: 768px;
+        background-size: 100% 60%;
         background-repeat: no-repeat;
         width: 768px;
     }
 
     .navbar{
-        border: 1px solid white;
-        width: 100%;
+        width: 90%;
         display: flex;
         align-items: center;
-        justify-content: space-evenly;
+        justify-content: space-between;
         margin: 20px;
+    }
+
+    .decorationBar{
+        position: absolute;
+        width: 0px;
     }
 
     .logoImgName .logoName{
@@ -794,19 +816,6 @@ footer .pagesLinks p:hover{
     }
     .user-box a{
         font-size: 20px;
-    }
-
-    .infos {
-        border: 1px solid red;
-        flex-direction: row;
-        height: 100%;
-        width: 100%;
-    }
-
-    .infos .login,
-    .infos .aboutUs {
-        width: 100%;
-        gap: 0px;
     }
 
     .aboutUsName{
@@ -830,5 +839,45 @@ footer .pagesLinks p:hover{
 
     .casa1, .casa2, .casa3, .casa4 p{
         font-size: 30px;
+    }
+}
+
+
+
+
+
+
+
+@media screen and (max-width: 766px){
+    body{
+        background-size: 100% 50%;
+    }
+    .character-container{
+        height: 1000px;
+        width: 100%;
+    }
+
+    .characters-cards{
+        display: grid;
+        grid-template-columns: 2fr 2fr;
+
+        width: 100%;
+        height: 1000px;
+    }
+
+    .charactersBox{
+        width: 100%;
+    }
+
+    .character-img{
+        height: 100%;
+    }
+    .principaisInfos .character-img img {
+        width: 15vw;
+    }
+
+
+    footer{
+        width: 100%;
     }
 }

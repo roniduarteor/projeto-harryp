@@ -36,7 +36,7 @@ body{
 
 .navbar{
     height: 76px;
-    width: 93.05555556vw;
+    width: 95vw;
 
     display: flex;
     flex-direction: row;
@@ -52,7 +52,7 @@ body{
 }
 
 .logoImgName .logoName{
-    height: 51;
+    height: 51px;
     color: #FFF;
     font-family: "Harry P";
     font-size: 54px;
@@ -79,6 +79,7 @@ body{
     height: 49px;
 
     display: flex;
+    flex-direction: row;
     gap: 20px;
 }
 
@@ -657,4 +658,177 @@ footer .pagesLinks p{
 }
 footer .pagesLinks p:hover{
     color: #946B2D;
+}
+
+
+/* INDEX 2 */
+
+.user-box{
+    list-style: none;
+
+    width: 150px;
+    height: 49px;
+
+    border-radius: 15px;
+    background: #946B2D;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.user{
+    color: #FFF;
+    font-family: 'Harry P';
+    font-size: 27px;
+    font-style: normal;
+    font-weight: 400;
+    text-decoration: none;
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*                      RESPONSIVIDADE                        */
+
+@media screen and (max-width: 1024px){
+    .character-container{
+        height: 700px;
+        display: flex;
+        flex-direction: column;
+    }
+    .characters-cards{
+        display: grid;
+        grid-template-columns: 0.5fr 0.5fr 0.5fr;
+        align-items: center;
+        justify-content: center;
+
+        height: 500px;
+    }
+    .charactersBox{
+        width: 300px;
+        height: 150px;
+    }
+    .principaisInfos{
+        width: 100%;
+        height: 100%;
+
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
+    .principaisInfos .character-img img{
+        height: 100%;
+    }
+    .infos-texto h2{
+        font-size: 39px;
+    }
+
+
+    .casasHogwarts{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .filter{
+        height: 120px;
+    }
+
+    .casa1, .casa2, .casa3, .casa4{
+        width: 210px;
+        height: 60px;
+    }
+    
+}
+
+
+
+
+@media screen and (max-width: 768px){
+    header{
+        width: 100%;
+        padding: 0;
+    }
+
+    body{
+        background-size: 768px;
+        background-repeat: no-repeat;
+        width: 768px;
+    }
+
+    .navbar{
+        border: 1px solid white;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        margin: 20px;
+    }
+
+    .logoImgName .logoName{
+        font-size: 40px;
+        margin-top: 20px;
+    }
+
+    .user-box{
+        width: 100px;
+    }
+    .user-box a{
+        font-size: 20px;
+    }
+
+    .infos {
+        border: 1px solid red;
+        flex-direction: row;
+        height: 100%;
+        width: 100%;
+    }
+
+    .infos .login,
+    .infos .aboutUs {
+        width: 100%;
+        gap: 0px;
+    }
+
+    .aboutUsName{
+        font-size: 10px;
+    }
+
+    .charactersBox{
+        width: 230px;
+        height: 150px;
+    }
+    
+    .infos-texto h4{
+        font-size: 10px;
+    }
+
+
+    .casa1, .casa2, .casa3, .casa4{
+        width: 150px;
+        height: 60px;
+    }
+
+    .casa1, .casa2, .casa3, .casa4 p{
+        font-size: 30px;
+    }
 }

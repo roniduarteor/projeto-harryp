@@ -29,7 +29,7 @@ const password = document.getElementById('password').value
 const login = data.find((objeto) => objeto.usuario === user && objeto.senha === password)
 
 if(login){
-    window.location = '../index.html'
+    window.location = './index2.html'
 }else{
     alert('User not found, try again!')
 }
